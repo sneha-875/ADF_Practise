@@ -1,0 +1,36 @@
+{
+	"name": "DS_AzureSqlTable_to_ADLS_INPUT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzureSqlDatabase_To_ADLS_INPUT",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "course_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "course_name",
+				"type": "varchar"
+			},
+			{
+				"name": "course_duration_months",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "course_fee",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "courses"
+		}
+	}
+}
