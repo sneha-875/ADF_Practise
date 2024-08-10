@@ -1,0 +1,17 @@
+{
+	"name": "LS_AzureSqlDatabase_To_ADLS_INPUT",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "mayadevser.database.windows.net",
+			"database": "mayadbsqlp",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "mayaadmin",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDA4QjQxRUE0LTdDRUMtNEZFRS04REUxLTQ3Q0M1NjY1OTk5QV80OGUyZjZhYS1mMTUzLTRkNDItOWIyOS1kZWVhMGNhMDI5M2MiDQp9"
+		}
+	}
+}
