@@ -1,0 +1,9 @@
+{
+	"name": "myadfbigdatapractise",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3a266a3b-62a2-4f0d-a914-e2b1196e2ab8",
+		"tenantId": "18bb4a2f-3656-4408-ba29-8e020b096e78"
+	}
+}
