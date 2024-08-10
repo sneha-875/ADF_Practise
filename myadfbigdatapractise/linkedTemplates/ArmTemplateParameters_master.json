@@ -17,6 +17,9 @@
 		"LS_AzureSqlDatabase_To_ADLS_INPUT_password": {
 			"value": ""
 		},
+		"LS_HTTP_TO_AzureDataLakeStorage_OUTPUT_accountKey": {
+			"value": ""
+		},
 		"LS_AzureDataLakeStorage_ADLS_OUTPUT_properties_typeProperties_url": {
 			"value": "https://adlsmaya.dfs.core.windows.net/"
 		},
@@ -40,6 +43,12 @@
 		},
 		"LS_AzureSqlDatabase_To_ADLS_INPUT_properties_typeProperties_userName": {
 			"value": "mayaadmin"
+		},
+		"LS_HTTP_TO_AzureDataLakeStorage_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlsmaya.dfs.core.windows.net/"
+		},
+		"LS_HttpServer_TO_ADLS_INPUT_properties_typeProperties_url": {
+			"value": "https://files.cdn.thinkific.com"
 		},
 		"containerUri": {
 			"value": ""
