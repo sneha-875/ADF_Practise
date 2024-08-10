@@ -347,6 +347,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
+						"fileName": "ordersoutput.csv",
 						"folderPath": "output",
 						"fileSystem": "data"
 					},
