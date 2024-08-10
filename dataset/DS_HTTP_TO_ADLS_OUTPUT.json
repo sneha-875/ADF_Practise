@@ -1,0 +1,23 @@
+{
+	"name": "DS_HTTP_TO_ADLS_OUTPUT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_HTTP_TO_AzureDataLakeStorage_OUTPUT",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "output",
+				"fileSystem": "data"
+			},
+			"columnDelimiter": "\t",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
