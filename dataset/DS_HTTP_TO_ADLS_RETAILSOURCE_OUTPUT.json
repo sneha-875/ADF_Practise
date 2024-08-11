@@ -1,0 +1,23 @@
+{
+	"name": "DS_HTTP_TO_ADLS_RETAILSOURCE_OUTPUT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_HTTP_TO_ADLS_RETAIL_SOURCE_OUTPUT",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "raw",
+				"fileSystem": "retaildatasets"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

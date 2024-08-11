@@ -1,0 +1,21 @@
+{
+	"name": "DS_HTTP_TO_ADLS_RETAILSOURCE_INPUT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_HTTP_TO_ADLS_RETAIL_SOURCE",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
