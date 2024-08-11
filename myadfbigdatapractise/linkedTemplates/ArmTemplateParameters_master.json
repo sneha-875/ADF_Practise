@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "myadfbigdatapractise"
 		},
+		"LSA_JSON_TO_OUTPUT_accountKey": {
+			"value": ""
+		},
 		"LS_AzureDataLakeStorage_ADLS_OUTPUT_accountKey": {
 			"value": ""
 		},
@@ -17,8 +20,17 @@
 		"LS_AzureSqlDatabase_To_ADLS_INPUT_password": {
 			"value": ""
 		},
+		"LS_BOLO_TO_ADLS_INPUT_connectionString": {
+			"value": ""
+		},
 		"LS_HTTP_TO_AzureDataLakeStorage_OUTPUT_accountKey": {
 			"value": ""
+		},
+		"LS_blob_to_adls_output_accountKey": {
+			"value": ""
+		},
+		"LSA_JSON_TO_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlsmaya.dfs.core.windows.net/"
 		},
 		"LS_AzureDataLakeStorage_ADLS_OUTPUT_properties_typeProperties_url": {
 			"value": "https://adlsmaya.dfs.core.windows.net/"
@@ -49,6 +61,9 @@
 		},
 		"LS_HttpServer_TO_ADLS_INPUT_properties_typeProperties_url": {
 			"value": "https://files.cdn.thinkific.com"
+		},
+		"LS_blob_to_adls_output_properties_typeProperties_url": {
+			"value": "https://adlsmaya.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"value": ""
