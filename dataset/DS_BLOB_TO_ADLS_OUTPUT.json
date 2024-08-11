@@ -1,0 +1,23 @@
+{
+	"name": "DS_BLOB_TO_ADLS_OUTPUT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_blob_to_adls_output",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "raw",
+				"fileSystem": "retaildatasets"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
