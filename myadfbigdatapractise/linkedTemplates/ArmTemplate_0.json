@@ -81,7 +81,7 @@
 		},
 		"LS_HTTP_TO_ADLS_RETAIL_SOURCE_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://myfirstbucketmaya.s3.ap-south-1.amazonaws.com"
+			"defaultValue": "https://files.cdn.thinkific.com"
 		},
 		"LS_HTTP_TO_ADLS_RETAIL_SOURCE_OUTPUT_properties_typeProperties_url": {
 			"type": "string",
@@ -478,7 +478,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "HttpServerLocation",
-						"relativeUrl": "products.csv"
+						"relativeUrl": "file_uploads/349536/attachments/c28/5fb/25b/orders.csv"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
