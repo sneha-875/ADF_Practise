@@ -31,6 +31,10 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'LS_BOLO_TO_ADLS_INPUT'"
 		},
+		"LS_HTTP_TO_ADLS_RETAIL_SOURCE_OUTPUT_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_HTTP_TO_ADLS_RETAIL_SOURCE_OUTPUT'"
+		},
 		"LS_HTTP_TO_AzureDataLakeStorage_OUTPUT_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'LS_HTTP_TO_AzureDataLakeStorage_OUTPUT'"
@@ -74,6 +78,14 @@
 		"LS_AzureSqlDatabase_To_ADLS_INPUT_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "mayaadmin"
+		},
+		"LS_HTTP_TO_ADLS_RETAIL_SOURCE_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://myfirstbucketmaya.s3.ap-south-1.amazonaws.com"
+		},
+		"LS_HTTP_TO_ADLS_RETAIL_SOURCE_OUTPUT_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsmaya.dfs.core.windows.net/"
 		},
 		"LS_HTTP_TO_AzureDataLakeStorage_OUTPUT_properties_typeProperties_url": {
 			"type": "string",
@@ -132,6 +144,9 @@
 					"LS_BOLO_TO_ADLS_INPUT_connectionString": {
 						"value": "[parameters('LS_BOLO_TO_ADLS_INPUT_connectionString')]"
 					},
+					"LS_HTTP_TO_ADLS_RETAIL_SOURCE_OUTPUT_accountKey": {
+						"value": "[parameters('LS_HTTP_TO_ADLS_RETAIL_SOURCE_OUTPUT_accountKey')]"
+					},
 					"LS_HTTP_TO_AzureDataLakeStorage_OUTPUT_accountKey": {
 						"value": "[parameters('LS_HTTP_TO_AzureDataLakeStorage_OUTPUT_accountKey')]"
 					},
@@ -164,6 +179,12 @@
 					},
 					"LS_AzureSqlDatabase_To_ADLS_INPUT_properties_typeProperties_userName": {
 						"value": "[parameters('LS_AzureSqlDatabase_To_ADLS_INPUT_properties_typeProperties_userName')]"
+					},
+					"LS_HTTP_TO_ADLS_RETAIL_SOURCE_properties_typeProperties_url": {
+						"value": "[parameters('LS_HTTP_TO_ADLS_RETAIL_SOURCE_properties_typeProperties_url')]"
+					},
+					"LS_HTTP_TO_ADLS_RETAIL_SOURCE_OUTPUT_properties_typeProperties_url": {
+						"value": "[parameters('LS_HTTP_TO_ADLS_RETAIL_SOURCE_OUTPUT_properties_typeProperties_url')]"
 					},
 					"LS_HTTP_TO_AzureDataLakeStorage_OUTPUT_properties_typeProperties_url": {
 						"value": "[parameters('LS_HTTP_TO_AzureDataLakeStorage_OUTPUT_properties_typeProperties_url')]"
