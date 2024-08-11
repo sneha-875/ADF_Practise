@@ -191,7 +191,7 @@
 							{
 								"activity": "products_file_validation",
 								"dependencyConditions": [
-									"Skipped"
+									"Succeeded"
 								]
 							}
 						],
