@@ -1,0 +1,17 @@
+{
+	"name": "TR_BLOB_TO_ADLS",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 24,
+				"startTime": "2024-08-11T12:00:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
