@@ -81,7 +81,7 @@
 		},
 		"LS_HTTP_TO_ADLS_RETAIL_SOURCE_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://files.cdn.thinkific.com"
+			"defaultValue": "https://retailraww.blob.core.windows.net"
 		},
 		"LS_HTTP_TO_ADLS_RETAIL_SOURCE_OUTPUT_properties_typeProperties_url": {
 			"type": "string",
@@ -294,6 +294,18 @@
 			"dependsOn": []
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/PL_')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"policy": {
+					"elapsedTimeMetric": {}
+				},
+				"annotations": []
+			},
+			"dependsOn": []
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/DS_AZureSqlTable_TO_ADLS_OUTPUT')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
@@ -478,7 +490,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "HttpServerLocation",
-						"relativeUrl": "file_uploads/349536/attachments/c28/5fb/25b/orders.csv"
+						"relativeUrl": "retail-raw/products.csv"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -541,59 +553,6 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/linkedServices/LSA_JSON_TO_OUTPUT')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/DS_blob_toADLS_INPUT')]",
-			"type": "Microsoft.DataFactory/factories/datasets",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"linkedServiceName": {
-					"referenceName": "LS_BOLO_TO_ADLS_INPUT",
-					"type": "LinkedServiceReference"
-				},
-				"annotations": [],
-				"type": "DelimitedText",
-				"typeProperties": {
-					"location": {
-						"type": "AzureBlobStorageLocation",
-						"fileName": "products.csv",
-						"container": "tetail-raw"
-					},
-					"columnDelimiter": ",",
-					"escapeChar": "\\",
-					"firstRowAsHeader": true,
-					"quoteChar": "\""
-				},
-				"schema": [
-					{
-						"name": "1",
-						"type": "String"
-					},
-					{
-						"name": "2",
-						"type": "String"
-					},
-					{
-						"name": "Quest Q64 10 FT. x 10 FT. Slant Leg Instant U",
-						"type": "String"
-					},
-					{
-						"name": "Prop_3",
-						"type": "String"
-					},
-					{
-						"name": "59.98",
-						"type": "String"
-					},
-					{
-						"name": "http://images.acmesports.sports/Quest+Q64+10+FT.+x+10+FT.+Slant+Leg+Instant+Up+Canopy",
-						"type": "String"
-					}
-				]
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/LS_BOLO_TO_ADLS_INPUT')]"
 			]
 		}
 	]

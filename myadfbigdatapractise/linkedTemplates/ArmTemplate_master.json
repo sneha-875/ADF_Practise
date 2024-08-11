@@ -81,7 +81,7 @@
 		},
 		"LS_HTTP_TO_ADLS_RETAIL_SOURCE_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://files.cdn.thinkific.com"
+			"defaultValue": "https://retailraww.blob.core.windows.net"
 		},
 		"LS_HTTP_TO_ADLS_RETAIL_SOURCE_OUTPUT_properties_typeProperties_url": {
 			"type": "string",

@@ -81,7 +81,7 @@
 		},
 		"LS_HTTP_TO_ADLS_RETAIL_SOURCE_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://files.cdn.thinkific.com"
+			"defaultValue": "https://retailraww.blob.core.windows.net"
 		},
 		"LS_HTTP_TO_ADLS_RETAIL_SOURCE_OUTPUT_properties_typeProperties_url": {
 			"type": "string",
@@ -450,82 +450,6 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/PL_HTTP_TO_ADLS_RETAILSOURCE')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"activities": [
-					{
-						"name": "Copy data1",
-						"type": "Copy",
-						"dependsOn": [],
-						"policy": {
-							"timeout": "0.12:00:00",
-							"retry": 0,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"source": {
-								"type": "DelimitedTextSource",
-								"storeSettings": {
-									"type": "HttpReadSettings",
-									"requestMethod": "GET"
-								},
-								"formatSettings": {
-									"type": "DelimitedTextReadSettings"
-								}
-							},
-							"sink": {
-								"type": "DelimitedTextSink",
-								"storeSettings": {
-									"type": "AzureBlobFSWriteSettings"
-								},
-								"formatSettings": {
-									"type": "DelimitedTextWriteSettings",
-									"quoteAllText": true,
-									"fileExtension": ".txt"
-								}
-							},
-							"enableStaging": false,
-							"translator": {
-								"type": "TabularTranslator",
-								"typeConversion": true,
-								"typeConversionSettings": {
-									"allowDataTruncation": true,
-									"treatBooleanAsNumber": false
-								}
-							}
-						},
-						"inputs": [
-							{
-								"referenceName": "DS_HTTP_TO_ADLS_RETAILSOURCE_INPUT",
-								"type": "DatasetReference",
-								"parameters": {}
-							}
-						],
-						"outputs": [
-							{
-								"referenceName": "DS_HTTP_TO_ADLS_RETAILSOURCE_OUTPUT",
-								"type": "DatasetReference",
-								"parameters": {}
-							}
-						]
-					}
-				],
-				"policy": {
-					"elapsedTimeMetric": {}
-				},
-				"annotations": []
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/DS_HTTP_TO_ADLS_RETAILSOURCE_INPUT')]",
-				"[concat(variables('factoryId'), '/datasets/DS_HTTP_TO_ADLS_RETAILSOURCE_OUTPUT')]"
-			]
-		},
-		{
 			"name": "[concat(parameters('factoryName'), '/DS_AZureSqlTable_TO_ADLS_OUTPUT')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
@@ -710,7 +634,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "HttpServerLocation",
-						"relativeUrl": "file_uploads/349536/attachments/c28/5fb/25b/orders.csv"
+						"relativeUrl": "retail-raw/products.csv"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -1068,6 +992,18 @@
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/pipelines/PL_BLOB_TO_ADLS')]"
 			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/PL_')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"policy": {
+					"elapsedTimeMetric": {}
+				},
+				"annotations": []
+			},
+			"dependsOn": []
 		}
 	]
 }

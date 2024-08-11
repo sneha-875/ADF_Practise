@@ -60,7 +60,7 @@
 			"value": "mayaadmin"
 		},
 		"LS_HTTP_TO_ADLS_RETAIL_SOURCE_properties_typeProperties_url": {
-			"value": "https://files.cdn.thinkific.com"
+			"value": "https://retailraww.blob.core.windows.net"
 		},
 		"LS_HTTP_TO_ADLS_RETAIL_SOURCE_OUTPUT_properties_typeProperties_url": {
 			"value": "https://adlsmaya.dfs.core.windows.net/"
