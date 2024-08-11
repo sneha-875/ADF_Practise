@@ -2,7 +2,7 @@
 	"name": "TR_BLOB_TO_ADLS",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipelines": [
 			{
 				"pipelineReference": {
