@@ -241,6 +241,18 @@
 								"value": "@equals(activity('products_metadata').output.columnCount,6)",
 								"type": "Expression"
 							},
+							"ifFalseActivities": [
+								{
+									"name": "pipelinefailed",
+									"type": "Fail",
+									"dependsOn": [],
+									"userProperties": [],
+									"typeProperties": {
+										"message": "pipelinefailed",
+										"errorCode": "404"
+									}
+								}
+							],
 							"ifTrueActivities": [
 								{
 									"name": "Copy data1_copy1",
