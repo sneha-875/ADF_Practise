@@ -5,11 +5,20 @@
 			"referenceName": "LS_HTTP_TO_ADLS_PARAMETRIZATION_OUTPUT",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"fileName": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().fileName",
+					"type": "Expression"
+				},
 				"folderPath": "raw",
 				"fileSystem": "retaildatasets"
 			},
