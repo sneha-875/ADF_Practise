@@ -1,0 +1,17 @@
+{
+	"name": "TRHTTP3_TO_ADLS_AUTO",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2024-08-17T18:42:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
