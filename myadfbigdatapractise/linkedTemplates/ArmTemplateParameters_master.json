@@ -8,6 +8,9 @@
 		"LSA_JSON_TO_OUTPUT_accountKey": {
 			"value": ""
 		},
+		"LS_AMAZON_S3_TO_ADLS_OUTPUT_accountKey": {
+			"value": ""
+		},
 		"LS_AzureDataLakeStorage_ADLS_OUTPUT_accountKey": {
 			"value": ""
 		},
@@ -45,6 +48,19 @@
 			"value": ""
 		},
 		"LSA_JSON_TO_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlsmaya.dfs.core.windows.net/"
+		},
+		"LS_AMAZON_S3_TO_ADLS_properties_typeProperties_accessKeyId": {
+			"value": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_Vault_Amazon_S3",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "accesskeyid-amazons3"
+			}
+		},
+		"LS_AMAZON_S3_TO_ADLS_OUTPUT_properties_typeProperties_url": {
 			"value": "https://adlsmaya.dfs.core.windows.net/"
 		},
 		"LS_AzureDataLakeStorage_ADLS_OUTPUT_properties_typeProperties_url": {
@@ -94,6 +110,9 @@
 		},
 		"LS_HttpServer_TO_ADLS_INPUT_properties_typeProperties_url": {
 			"value": "https://files.cdn.thinkific.com"
+		},
+		"LS_Vault_Amazon_S3_properties_typeProperties_baseUrl": {
+			"value": "https://bigdatavaultm.vault.azure.net/"
 		},
 		"LS_blob_to_adls_output_properties_typeProperties_url": {
 			"value": "https://adlsmaya.dfs.core.windows.net/"
