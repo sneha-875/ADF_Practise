@@ -1,0 +1,12 @@
+{
+	"name": "LS_HTTP2_TO ADLS_INPUT2",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://retailraww.blob.core.windows.net",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
