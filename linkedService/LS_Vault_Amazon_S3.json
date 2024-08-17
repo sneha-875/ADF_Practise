@@ -1,0 +1,10 @@
+{
+	"name": "LS_Vault_Amazon_S3",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://bigdatavaultm.vault.azure.net/"
+		}
+	}
+}
