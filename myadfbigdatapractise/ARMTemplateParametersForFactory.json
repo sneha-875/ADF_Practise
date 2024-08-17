@@ -29,6 +29,9 @@
 		"LS_HTTP2_TO_ADLS_OUTPUT_accountKey": {
 			"value": ""
 		},
+		"LS_HTTP3_TO_ADLS_INPUT_AUTO_connectionString": {
+			"value": ""
+		},
 		"LS_HTTP_TO_ADLS_PARAMETRIZATION_OUTPUT_accountKey": {
 			"value": ""
 		},
