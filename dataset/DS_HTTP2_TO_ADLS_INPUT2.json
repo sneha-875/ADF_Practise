@@ -1,0 +1,22 @@
+{
+	"name": "DS_HTTP2_TO_ADLS_INPUT2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_HTTP2_TO ADLS_INPUT2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "retail-raw/products.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
