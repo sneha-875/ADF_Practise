@@ -1,0 +1,27 @@
+{
+	"name": "LS_AMAZON_S3_TO_ADLS",
+	"properties": {
+		"annotations": [],
+		"type": "AmazonS3",
+		"typeProperties": {
+			"serviceUrl": "https://s3.amazonaws.com",
+			"accessKeyId": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_Vault_Amazon_S3",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "accesskeyid-amazons3"
+			},
+			"secretAccessKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_Vault_Amazon_S3",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "Secretaccesskey-amazons3"
+			},
+			"authenticationType": "AccessKey"
+		}
+	}
+}
