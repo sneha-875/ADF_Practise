@@ -3,14 +3,31 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_HTTP2_TO ADLS_INPUT2",
-			"type": "LinkedServiceReference"
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"baseURL": {
+					"value": "@dataset().baseURL",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"baseURL": {
+				"type": "string"
+			},
+			"relativeURL": {
+				"type": "string"
+			}
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "retail-raw/products.csv"
+				"relativeUrl": {
+					"value": "@dataset().relativeURL",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
