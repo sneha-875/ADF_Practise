@@ -1,0 +1,48 @@
+{
+	"name": "DS_AMAZON_S3_TO_ADLS_INPUT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AMAZON_S3_TO_ADLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AmazonS3Location",
+				"bucketName": "myfirstbucketmaya",
+				"fileName": "order_items.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "10",
+				"type": "String"
+			},
+			{
+				"name": "11",
+				"type": "String"
+			},
+			{
+				"name": "957",
+				"type": "String"
+			},
+			{
+				"name": "13",
+				"type": "String"
+			},
+			{
+				"name": "299.984",
+				"type": "String"
+			},
+			{
+				"name": "299.985",
+				"type": "String"
+			}
+		]
+	}
+}
