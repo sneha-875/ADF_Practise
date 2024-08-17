@@ -26,6 +26,9 @@
 		"LS_BLOB_FILELOOKUP_KEPT_PARAMERTIZATION_connectionString": {
 			"value": ""
 		},
+		"LS_BLOB_ORDERSINPUT_TO_ADLS_INPUT_connectionString": {
+			"value": ""
+		},
 		"LS_BOLO_TO_ADLS_INPUT_connectionString": {
 			"value": ""
 		},
