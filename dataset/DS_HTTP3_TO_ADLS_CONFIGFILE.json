@@ -1,0 +1,36 @@
+{
+	"name": "DS_HTTP3_TO_ADLS_CONFIGFILE",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_HTTP3_TO_ADLS_INPUT_AUTO",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "filelist_lookup.csv",
+				"container": "configurations"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "baseURL",
+				"type": "String"
+			},
+			{
+				"name": "relativeURL",
+				"type": "String"
+			},
+			{
+				"name": "filename",
+				"type": "String"
+			}
+		]
+	}
+}
