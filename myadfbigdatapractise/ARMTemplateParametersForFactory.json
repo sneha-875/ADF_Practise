@@ -20,7 +20,13 @@
 		"LS_AzureSqlDatabase_To_ADLS_INPUT_password": {
 			"value": ""
 		},
+		"LS_BLOB_FILELOOKUP_KEPT_PARAMERTIZATION_connectionString": {
+			"value": ""
+		},
 		"LS_BOLO_TO_ADLS_INPUT_connectionString": {
+			"value": ""
+		},
+		"LS_HTTP2_TO_ADLS_OUTPUT_accountKey": {
 			"value": ""
 		},
 		"LS_HTTP_TO_ADLS_PARAMETRIZATION_OUTPUT_accountKey": {
@@ -61,6 +67,12 @@
 		},
 		"LS_AzureSqlDatabase_To_ADLS_INPUT_properties_typeProperties_userName": {
 			"value": "mayaadmin"
+		},
+		"LS_HTTP2_TO ADLS_INPUT2_properties_typeProperties_url": {
+			"value": "@{linkedService().baseURL}"
+		},
+		"LS_HTTP2_TO_ADLS_OUTPUT_properties_typeProperties_url": {
+			"value": "https://adlsmaya.dfs.core.windows.net/"
 		},
 		"LS_HTTP_ADLS_PARAMETERIZATION1_properties_typeProperties_url": {
 			"value": "@{linkedService().baseUrl}"
