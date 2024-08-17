@@ -1749,6 +1749,37 @@
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/pipelines/PL_BLOB_TO_ADLS')]"
 			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/TRHTTP3_TO_ADLS_AUTO')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Started",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "PL_HTTP3_TO_ADLS_AUTO",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
+				"type": "ScheduleTrigger",
+				"typeProperties": {
+					"recurrence": {
+						"frequency": "Day",
+						"interval": 1,
+						"startTime": "2024-08-17T18:42:00",
+						"timeZone": "India Standard Time",
+						"schedule": {}
+					}
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/PL_HTTP3_TO_ADLS_AUTO')]"
+			]
 		}
 	]
 }
