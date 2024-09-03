@@ -5,6 +5,9 @@
 			"referenceName": "LS_MANUAL_FILE_ADLS_TO_PARQ",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "practise-ds-m"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
