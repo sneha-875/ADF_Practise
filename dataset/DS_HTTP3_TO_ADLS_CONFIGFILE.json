@@ -5,6 +5,9 @@
 			"referenceName": "LS_HTTP3_TO_ADLS_INPUT_AUTO",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "practise-ds-m"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
