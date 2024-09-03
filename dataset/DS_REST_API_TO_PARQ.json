@@ -5,6 +5,9 @@
 			"referenceName": "LS_REST_API_TO_PARQ",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "practise-ds-m"
+		},
 		"annotations": [],
 		"type": "RestResource",
 		"schema": []
