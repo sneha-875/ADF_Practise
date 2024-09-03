@@ -1,0 +1,13 @@
+{
+	"name": "DS_REST_API_TO_PARQ",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_REST_API_TO_PARQ",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
