@@ -1,9 +1,8 @@
 {
 	"name": "DS_MANUAL_FILE_ADLS_TO_PARQ_OUTPUT",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "LS_MANUAL_FILE_ADLS_TO_PARQ_OUTPUT",
-			"type": "LinkedServiceReference"
+		"folder": {
+			"name": "practise-v"
 		},
 		"annotations": [],
 		"type": "Parquet",
