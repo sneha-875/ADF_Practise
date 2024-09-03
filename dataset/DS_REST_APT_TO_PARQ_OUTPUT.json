@@ -1,9 +1,8 @@
 {
 	"name": "DS_REST_APT_TO_PARQ_OUTPUT",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "LS_REST_APT_TO_PARQ",
-			"type": "LinkedServiceReference"
+		"folder": {
+			"name": "practise-v"
 		},
 		"annotations": [],
 		"type": "Parquet",

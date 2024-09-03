@@ -1,9 +1,8 @@
 {
 	"name": "DS_REST_API_TO_PARQ",
 	"properties": {
-		"linkedServiceName": {
-			"referenceName": "LS_REST_API_TO_PARQ",
-			"type": "LinkedServiceReference"
+		"folder": {
+			"name": "practise-v"
 		},
 		"annotations": [],
 		"type": "RestResource",
